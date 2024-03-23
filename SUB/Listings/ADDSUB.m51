@@ -1,0 +1,69 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    05/23/2022  09:42:01  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\ADD.obj, .\Objects\SUB.obj TO .\Objects\ADDSUB PRINT (.\Listings\ADDSUB.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\ADD.obj (ADD)
+  .\Objects\SUB.obj (SUB)
+
+
+LINK MAP OF MODULE:  .\Objects\ADDSUB (ADD)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000FH     ABSOLUTE     
+* OVERLAP * CODE    0000H     000FH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\ADDSUB (ADD)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ADD
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0005H         LINE#         5
+  C:0007H         LINE#         6
+  C:0009H         LINE#         7
+  C:000AH         LINE#         8
+  C:000CH         LINE#         9
+  C:000EH         LINE#         10
+  -------         ENDMOD        ADD
+
+  -------         MODULE        SUB
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0004H         LINE#         4
+  C:0005H         LINE#         5
+  C:0007H         LINE#         6
+  C:0009H         LINE#         7
+  C:000AH         LINE#         8
+  C:000CH         LINE#         9
+  C:000EH         LINE#         10
+  -------         ENDMOD        SUB
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      000EH
+
+******************************************************************************
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  05/23/2022  09:42:01  PAGE 2
+
+
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001EH BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=30
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

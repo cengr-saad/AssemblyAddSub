@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  ADD                                                                  05/23/2022 09:41:58 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ADD.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ADD.a51 SET(SMALL) DEBUG PRINT(.\Listings\ADD.lst) OBJECT(.\Objects\ADD
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0H;
+0000 74A4              2             MOV A, #0A4H    ;Moving A4H in accumulator
+0002 24BE              3             ADD A, #0BEH    ;Adding BEH with the value in accumulator and store result in accum
+                             ulaltor
+0004 F8                4             MOV R0, A       ;Moving value of accumulator in R0 register
+0005 7467              5             MOV A, #67H     ;Moving 67H in accumulator
+0007 3479              6             ADDC A, #79H    ;Adding carry and 79H with the value in accumulator and store resul
+                             t in accumulaltor
+0009 F9                7             MOV R1, A       ;Moving value of accumulator in R1 register
+000A 7435              8             MOV A, #35H     ;Moving 35H in accumulator
+000C 34A6              9             ADDC A, #0A6H   ;Adding carry and A6H with the value in accumulator and store resul
+                             t in accumulaltor
+000E FA               10             MOV R2, A       ;Moving value of accumulator in R2 register
+                      11             END;
+A51 MACRO ASSEMBLER  ADD                                                                  05/23/2022 09:41:58 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

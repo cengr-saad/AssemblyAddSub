@@ -1,0 +1,54 @@
+A51 MACRO ASSEMBLER  ADD                                                                  05/23/2022 11:56:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ADD.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ADD.a51 SET(SMALL) DEBUG PRINT(.\Listings\ADD.lst) OBJECT(.\Objects\ADD
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0H;
+0000 7423              2             MOV A, #23H     ;Moving BEH in accumulator
+0002 2472              3             ADD A, #72H     ;Subtracting A4H with the value in accumulator and store result in 
+                             accumulaltor
+0004 F8                4             MOV R0, A       ;Moving value of accumulator in R0 register
+0005 74A1              5             MOV A, #0A1H    ;Moving 79H in accumulator
+0007 34B2              6             ADDC A, #0B2H   ;Subtracting carry and 67H with the value in accumulator and store 
+                             result in accumulaltor
+0009 F9                7             MOV R1, A       ;Moving value of accumulator in R1 register
+000A 74ED              8             MOV A, #0EDH    ;Moving A6H in accumulator
+000C 34EA              9             ADDC A, #0EAH   ;Subtracting carry and 35H with the value in accumulator and store 
+                             result in accumulaltor
+000E FA               10             MOV R2, A       ;Moving value of accumulator in R2 register
+000F 74AB             11             MOV A, #0ABH    ;Moving A6H in accumulator
+0011 34CD             12             ADDC A, #0CDH   ;Subtracting carry and 35H with the value in accumulator and store 
+                             result in accumulaltor
+0013 FB               13             MOV R3, A       ;Moving value of accumulator in R2 register
+0014 E8               14             MOV A, R0
+0015 9489             15             SUBB A, #89H
+0017 F8               16             MOV R0, A       ;Moving value of accumulator in R0 register
+0018 E9               17             MOV A, R1
+0019 9467             18             SUBB A, #67H
+001B F9               19             MOV R1, A       ;Moving value of accumulator in R0 register
+001C EA               20             MOV A, R2
+001D 9445             21             SUBB A, #45H
+001F FA               22             MOV R2, A       ;Moving value of accumulator in R0 register
+0020 EB               23             MOV A, R3
+0021 9437             24             SUBB A, #37H
+0023 FB               25             MOV R3, A       ;Moving value of accumulator in R0 register
+                      26             END
+A51 MACRO ASSEMBLER  ADD                                                                  05/23/2022 11:56:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

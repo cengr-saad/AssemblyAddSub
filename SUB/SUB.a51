@@ -1,0 +1,11 @@
+ORG 0H;
+	MOV A, #0BEH;
+	SUBB A, #0A4H;
+	MOV R0, A;
+	MOV A, #79H;
+	SUBB A, #67H;
+	MOV R1, A;
+	MOV A, #0A6H;
+	SUBB A, #35H;
+	MOV R2, A;
+	END;

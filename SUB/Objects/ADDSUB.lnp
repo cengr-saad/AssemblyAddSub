@@ -1,0 +1,4 @@
+".\Objects\ADD.obj",
+".\Objects\SUB.obj" 
+TO ".\Objects\ADDSUB" 
+PRINT(".\Listings\ADDSUB.m51")
